@@ -161,7 +161,8 @@ if selected == "Spam Message Detector":
     host=host,
     user=user,
     password=password,
-    database=database
+    database=database,
+    port = 3306
     )
 
     cursor = connection.cursor()
