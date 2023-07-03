@@ -150,6 +150,8 @@ if selected == "Home":
 if selected == "Spam Message Detector":
     import pymysql
 
+    my_db.connect(**st.secrets.db_credentials)
+
     # Retrieve database connection details from environment variables
     host = os.environ['DB_HOST']
     user = os.environ['DB_USER']
