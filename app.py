@@ -150,12 +150,18 @@ if selected == "Home":
 if selected == "Spam Message Detector":
     import pymysql
 
-    connection = pymysql.connect(
-    host='localhost',  # Replace with your host name
-    user='root',  # Replace with your username
-    password='',  # Replace with your password
-    database='Spam_Sleuth',  # Replace with your database name
-    port=3306
+    # Retrieve database connection details from environment variables
+    host = os.environ['DB_HOST']
+    user = os.environ['DB_USER']
+    password = os.environ['DB_PASSWORD']
+    database = os.environ['DB_DATABASE']
+
+# Establish database connection
+    conn = pymysql.connect(
+    host=host,
+    user=user,
+    password=password,
+    database=database
     )
 
     cursor = connection.cursor()
