@@ -158,10 +158,10 @@ if selected == "Spam Message Detector":
     user=db_credentials["DB_USER"],
     password=db_credentials["DB_PASSWORD"],
     database=db_credentials["DB_DATABASE"],
-    port = 80
+    port = 3306
     )
 
-    cursor = connection.cursor()
+    cursor = conn.cursor()
 
     st.markdown('<div style="display: flex; justify-content: center; align-items: center; background-color: #000000; color: white; padding: 10px; margin-bottom: 20px; border-radius: 5px; font-size: 28px; font-family: Trebuchet MS; font-weight: bold; box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);">WELCOME TO SPAM MESSAGE DETECTOR</div>', unsafe_allow_html=True)
 
