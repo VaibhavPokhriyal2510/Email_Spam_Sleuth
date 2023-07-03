@@ -158,7 +158,7 @@ if selected == "Spam Message Detector":
     user=db_credentials["DB_USER"],
     password=db_credentials["DB_PASSWORD"],
     database=db_credentials["DB_DATABASE"],
-    port = 3306
+    port = 80
     )
 
     cursor = conn.cursor()
