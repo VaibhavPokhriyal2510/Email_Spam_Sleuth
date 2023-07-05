@@ -11,3 +11,5 @@ mysql-connector-python
 plotly
 pymysql
 python-dotenv
+SQLAlchemy
+mysqlclient
